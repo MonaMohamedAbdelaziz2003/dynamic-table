@@ -1,0 +1,9 @@
+<div class="page-wrapper" dir="ltr">
+
+    <mat-form-field appearance="outline">
+        <mat-label>🔍 Filter by ID</mat-label>
+        <input matInput [formControl]="searchControl" placeholder="Search this page..." />
+    </mat-form-field>
+    <app-shared-table [config]="tableConfig" (pageChange)="onPageChange($event)"></app-shared-table>
+
+</div>
